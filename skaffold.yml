@@ -4,6 +4,7 @@ deploy:
   kubectl:
     manifests:
       - ./infra/k8s/ingress.yml
+      - ./infra/k8s/secret.yml
       - ./infra/k8s/**/*
 build:
   local:

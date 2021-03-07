@@ -18,3 +18,11 @@ build:
         manual:
           - src: 'src/**/*.ts'
             dest: .
+    - image: yuva/client
+      context: client
+      docker:
+        dockerfile: Dockerfile
+      sync:
+        manual:
+          - src: 'pages/*.js'
+            dest: .
